@@ -10,11 +10,24 @@
 		6332031725F19AB900999D00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332031625F19AB900999D00 /* AppDelegate.swift */; };
 		6332031925F19AB900999D00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332031825F19AB900999D00 /* SceneDelegate.swift */; };
 		6332031B25F19AB900999D00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332031A25F19AB900999D00 /* ViewController.swift */; };
-		6332031E25F19AB900999D00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6332031C25F19AB900999D00 /* Main.storyboard */; };
 		6332032025F19ABC00999D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6332031F25F19ABC00999D00 /* Assets.xcassets */; };
 		6332032325F19ABC00999D00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6332032125F19ABC00999D00 /* LaunchScreen.storyboard */; };
 		6332032E25F19ABC00999D00 /* Grocery_StoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332032D25F19ABC00999D00 /* Grocery_StoreTests.swift */; };
 		6332033925F19ABC00999D00 /* Grocery_StoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332033825F19ABC00999D00 /* Grocery_StoreUITests.swift */; };
+		6332034A25F19AD800999D00 /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 6332034925F19AD800999D00 /* products.json */; };
+		6332035C25F19B1000999D00 /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332035725F19B0F00999D00 /* HomeBuilder.swift */; };
+		6332035D25F19B1000999D00 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332035825F19B1000999D00 /* HomeInteractor.swift */; };
+		6332035E25F19B1000999D00 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332035925F19B1000999D00 /* HomePresenter.swift */; };
+		6332035F25F19B1000999D00 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332035A25F19B1000999D00 /* HomeViewController.swift */; };
+		6332036025F19B1000999D00 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332035B25F19B1000999D00 /* HomeRouter.swift */; };
+		6332036625F19B2200999D00 /* StubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332036525F19B2200999D00 /* StubService.swift */; };
+		6332036C25F19B3600999D00 /* GroceryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332036B25F19B3600999D00 /* GroceryResult.swift */; };
+		6332037225F19B4700999D00 /* ViewLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332037125F19B4700999D00 /* ViewLoadable.swift */; };
+		6332037B25F19B6F00999D00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6332037A25F19B6F00999D00 /* Main.storyboard */; };
+		6332038325F19B8800999D00 /* GroceryItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332038125F19B8800999D00 /* GroceryItemCell.swift */; };
+		6332038425F19B8800999D00 /* GroceryItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6332038225F19B8800999D00 /* GroceryItemCell.xib */; };
+		6332038A25F19B8F00999D00 /* AddBagControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6332038825F19B8E00999D00 /* AddBagControl.swift */; };
+		6332038B25F19B8F00999D00 /* AddBagControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6332038925F19B8E00999D00 /* AddBagControl.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +52,6 @@
 		6332031625F19AB900999D00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6332031825F19AB900999D00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6332031A25F19AB900999D00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6332031D25F19AB900999D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6332031F25F19ABC00999D00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6332032225F19ABC00999D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6332032425F19ABC00999D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +61,20 @@
 		6332033425F19ABC00999D00 /* Grocery StoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Grocery StoreUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6332033825F19ABC00999D00 /* Grocery_StoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grocery_StoreUITests.swift; sourceTree = "<group>"; };
 		6332033A25F19ABC00999D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6332034925F19AD800999D00 /* products.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
+		6332035725F19B0F00999D00 /* HomeBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
+		6332035825F19B1000999D00 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		6332035925F19B1000999D00 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		6332035A25F19B1000999D00 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6332035B25F19B1000999D00 /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		6332036525F19B2200999D00 /* StubService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubService.swift; sourceTree = "<group>"; };
+		6332036B25F19B3600999D00 /* GroceryResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryResult.swift; sourceTree = "<group>"; };
+		6332037125F19B4700999D00 /* ViewLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewLoadable.swift; sourceTree = "<group>"; };
+		6332037A25F19B6F00999D00 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6332038125F19B8800999D00 /* GroceryItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryItemCell.swift; sourceTree = "<group>"; };
+		6332038225F19B8800999D00 /* GroceryItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroceryItemCell.xib; sourceTree = "<group>"; };
+		6332038825F19B8E00999D00 /* AddBagControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBagControl.swift; sourceTree = "<group>"; };
+		6332038925F19B8E00999D00 /* AddBagControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddBagControl.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +125,15 @@
 		6332031525F19AB900999D00 /* Grocery Store */ = {
 			isa = PBXGroup;
 			children = (
+				6332037025F19B4000999D00 /* Shared */,
+				6332036A25F19B2B00999D00 /* Model */,
+				6332036425F19B1B00999D00 /* HttpService */,
+				6332035625F19B0700999D00 /* Home */,
+				6332037925F19B5A00999D00 /* View */,
+				6332034925F19AD800999D00 /* products.json */,
 				6332031625F19AB900999D00 /* AppDelegate.swift */,
 				6332031825F19AB900999D00 /* SceneDelegate.swift */,
 				6332031A25F19AB900999D00 /* ViewController.swift */,
-				6332031C25F19AB900999D00 /* Main.storyboard */,
 				6332031F25F19ABC00999D00 /* Assets.xcassets */,
 				6332032125F19ABC00999D00 /* LaunchScreen.storyboard */,
 				6332032425F19ABC00999D00 /* Info.plist */,
@@ -126,6 +157,70 @@
 				6332033A25F19ABC00999D00 /* Info.plist */,
 			);
 			path = "Grocery StoreUITests";
+			sourceTree = "<group>";
+		};
+		6332035625F19B0700999D00 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6332035A25F19B1000999D00 /* HomeViewController.swift */,
+				6332035725F19B0F00999D00 /* HomeBuilder.swift */,
+				6332035825F19B1000999D00 /* HomeInteractor.swift */,
+				6332035925F19B1000999D00 /* HomePresenter.swift */,
+				6332035B25F19B1000999D00 /* HomeRouter.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6332036425F19B1B00999D00 /* HttpService */ = {
+			isa = PBXGroup;
+			children = (
+				6332036525F19B2200999D00 /* StubService.swift */,
+			);
+			path = HttpService;
+			sourceTree = "<group>";
+		};
+		6332036A25F19B2B00999D00 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6332036B25F19B3600999D00 /* GroceryResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6332037025F19B4000999D00 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				6332037125F19B4700999D00 /* ViewLoadable.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		6332037925F19B5A00999D00 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6332038025F19B7D00999D00 /* Control */,
+				6332037F25F19B7700999D00 /* Cell */,
+				6332037A25F19B6F00999D00 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6332037F25F19B7700999D00 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6332038125F19B8800999D00 /* GroceryItemCell.swift */,
+				6332038225F19B8800999D00 /* GroceryItemCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6332038025F19B7D00999D00 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				6332038825F19B8E00999D00 /* AddBagControl.swift */,
+				6332038925F19B8E00999D00 /* AddBagControl.xib */,
+			);
+			path = Control;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +326,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6332038B25F19B8F00999D00 /* AddBagControl.xib in Resources */,
 				6332032325F19ABC00999D00 /* LaunchScreen.storyboard in Resources */,
+				6332034A25F19AD800999D00 /* products.json in Resources */,
 				6332032025F19ABC00999D00 /* Assets.xcassets in Resources */,
-				6332031E25F19AB900999D00 /* Main.storyboard in Resources */,
+				6332037B25F19B6F00999D00 /* Main.storyboard in Resources */,
+				6332038425F19B8800999D00 /* GroceryItemCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +356,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6332035C25F19B1000999D00 /* HomeBuilder.swift in Sources */,
 				6332031B25F19AB900999D00 /* ViewController.swift in Sources */,
+				6332038325F19B8800999D00 /* GroceryItemCell.swift in Sources */,
+				6332038A25F19B8F00999D00 /* AddBagControl.swift in Sources */,
+				6332036C25F19B3600999D00 /* GroceryResult.swift in Sources */,
+				6332036625F19B2200999D00 /* StubService.swift in Sources */,
 				6332031725F19AB900999D00 /* AppDelegate.swift in Sources */,
+				6332037225F19B4700999D00 /* ViewLoadable.swift in Sources */,
+				6332035E25F19B1000999D00 /* HomePresenter.swift in Sources */,
+				6332035D25F19B1000999D00 /* HomeInteractor.swift in Sources */,
+				6332036025F19B1000999D00 /* HomeRouter.swift in Sources */,
+				6332035F25F19B1000999D00 /* HomeViewController.swift in Sources */,
 				6332031925F19AB900999D00 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,14 +404,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6332031C25F19AB900999D00 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6332031D25F19AB900999D00 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6332032125F19ABC00999D00 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

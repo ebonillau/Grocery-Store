@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFit" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="infinite" interfaceStyle="light" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="AddBagControl" customModule="Sample_2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gWi-pr-Wo2">
+                    <rect key="frame" x="0.0" y="0.0" width="250" height="120"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Htv-za-oi4">
+                            <rect key="frame" x="0.0" y="0.0" width="250" height="60"/>
+                            <color key="backgroundColor" red="0.082283399999141693" green="0.34921908378601074" blue="0.16976684331893921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="ADD TO BAG">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="addToBagButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="8Hp-dW-3DQ"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Oyn-Io-1e3">
+                            <rect key="frame" x="0.0" y="60" width="250" height="60"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOX-PO-NCu">
+                                    <rect key="frame" x="0.0" y="0.0" width="83.5" height="60"/>
+                                    <color key="backgroundColor" red="0.082283399999141693" green="0.34921908378601074" blue="0.16976684331893921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                    <state key="normal" title="-">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="decrementButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="u9a-Vn-JGD"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrk-Na-GHi">
+                                    <rect key="frame" x="83.5" y="0.0" width="83" height="60"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPl-Gf-iyy">
+                                    <rect key="frame" x="166.5" y="0.0" width="83.5" height="60"/>
+                                    <color key="backgroundColor" red="0.082283399999141693" green="0.34921908378601074" blue="0.16976684331893921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                    <state key="normal" title="+">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="incrementButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="Bed-Hg-8Mb"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Htv-za-oi4" firstAttribute="leading" secondItem="gWi-pr-Wo2" secondAttribute="leading" id="B6e-gf-VVV"/>
+                        <constraint firstAttribute="trailing" secondItem="Htv-za-oi4" secondAttribute="trailing" id="RHw-4m-RQs"/>
+                        <constraint firstItem="Oyn-Io-1e3" firstAttribute="leading" secondItem="gWi-pr-Wo2" secondAttribute="leading" id="fDd-cD-hVl"/>
+                        <constraint firstAttribute="trailing" secondItem="Oyn-Io-1e3" secondAttribute="trailing" id="gLJ-8b-ni0"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="gWi-pr-Wo2" secondAttribute="bottom" id="8cR-cU-Bhz"/>
+                <constraint firstAttribute="trailing" secondItem="gWi-pr-Wo2" secondAttribute="trailing" id="FiI-Wj-aSp"/>
+                <constraint firstItem="gWi-pr-Wo2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VNz-go-87K"/>
+                <constraint firstItem="gWi-pr-Wo2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sYW-MM-cCd"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addToBagButton" destination="Htv-za-oi4" id="ICy-UJ-1xm"/>
+                <outlet property="bottomStackView" destination="Oyn-Io-1e3" id="3La-Ye-y6Z"/>
+                <outlet property="minussButton" destination="fOX-PO-NCu" id="cDi-Mg-2lg"/>
+                <outlet property="plusButton" destination="pPl-Gf-iyy" id="m7Y-yh-J7d"/>
+                <outlet property="stepLabel" destination="zrk-Na-GHi" id="RTJ-41-m2f"/>
+            </connections>
+            <point key="canvasLocation" x="430.43478260869568" y="-90.736607142857139"/>
+        </view>
+    </objects>
+</document>

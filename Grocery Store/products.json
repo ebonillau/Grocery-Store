@@ -1,0 +1,38 @@
+{
+    "groceries": [{
+        "sku-id": "100001A",
+        "title": "Apple",
+        "product_image": "apple",
+        "details": "Nature fresh kashmiri apples",
+        "price": 3.99
+    },
+    {
+        "sku-id": "100002A",
+        "title": "Watermelon",
+        "product_image": "watermelon",
+        "details": "Red ripe watermelons",
+        "price": 3.99
+    },
+    {
+        "sku-id": "100003A",
+        "title": "Red Grapes",
+        "product_image": "red_grapes",
+        "details": "Seedless red ",
+        "price": 3.99
+    },
+    {
+        "sku-id": "100004A",
+        "title": "Green Grapes",
+        "product_image": "green_grapes",
+        "details": "Seed green grapes from Peru",
+        "price": 3.99
+    },
+    {
+        "sku-id": "100005A",
+        "title": "Straberry",
+        "product_image": "straberry",
+        "details": "Reddish straberries from farm",
+        "price": 3.99
+    }
+    ]
+}
