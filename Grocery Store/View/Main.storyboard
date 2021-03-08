@@ -17,15 +17,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xcC-fE-Egd">
-                                <rect key="frame" x="0.0" y="109.5" width="414" height="752.5"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick fresh groceries" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GeF-lt-ccH">
-                                <rect key="frame" x="20" y="64" width="190" height="25.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
-                                <color key="textColor" systemColor="systemIndigoColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -33,9 +27,7 @@
                             <constraint firstItem="xcC-fE-Egd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6CM-Zv-Rsv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xcC-fE-Egd" secondAttribute="trailing" id="6la-mx-FPM"/>
                             <constraint firstItem="xcC-fE-Egd" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="MGl-6q-iqt"/>
-                            <constraint firstItem="xcC-fE-Egd" firstAttribute="top" secondItem="GeF-lt-ccH" secondAttribute="bottom" constant="20" id="baL-46-RYC"/>
-                            <constraint firstItem="GeF-lt-ccH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="lLP-CP-k1h"/>
-                            <constraint firstItem="GeF-lt-ccH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mYP-6W-A62"/>
+                            <constraint firstItem="xcC-fE-Egd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="t0a-ii-tuz"/>
                         </constraints>
                     </view>
                     <connections>
@@ -50,9 +42,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

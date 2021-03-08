@@ -25,15 +25,6 @@ class HomeViewController: UIViewController {
         }
     }
     
-//    lazy var addBagControl: AddBagControl = {
-//        let control = AddBagControl.loadFromNib()
-//        let addBagViewModel = BagViewModel(title: "ADD TO BAG SSS", stepValue: 0)
-//        control.configure(withViewModel: addBagViewModel, bagClousure: { (stepValue) in
-//            print("Step Value \(stepValue)")
-//        })
-//        return control
-//    }()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.presenter?.viewDidLoad()
